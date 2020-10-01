@@ -1,0 +1,33 @@
+SENSORS:
+A device that detects the changes in electrical or physical or other quantities and hence produces an output as a change in the quantity is called as a Sensor.
+TYPES OF SENSORS:
+SPEED SENSOR:
+Sensors used for detecting speed of an object or vehicle is called as Speed sensor. There are different types of sensors to detect the speed such as Wheel speed sensors, speedometers, LIDAR, ground speed radar, doppler radar, air speed indicators etc. By varying speed of transmitting motor, we can change the speed of all motors.
+TEMPERATURE SENSOR:
+A device which gives temperature measurement as an electrical signal is called as Temperature sensor. This electrical signal will be in the form of electrical voltage and is proportional to the temperature measurement. Design of Industrial Temperature Controller for controlling temperature of devices used in industrial applications is one of the frequently used practical applications of the temperature sensor.
+PIR SENSOR:
+An electronic sensor used for measuring the infrared light radiation emitted from objects in its field of view is called as a PIR sensor or Pyroelectric sensor. Automatic Door Opening System is a typical application of PIR sensors which is intended for automatic door closing and opening operations based on body movement near the door.
+ULTRASONIC SENSOR:
+An Ultrasonic Sensor is a non-contact type device that can be used to measure distance as well as velocity of an object. An Ultrasonic Sensor works based on the properties of the sound waves with frequency greater than that of the human audible range. The distance measurement at inaccessible areas is a typical application of ultrasonic sensors. PROXIMITY SENSOR: A Proximity Sensor is a non-contact type sensor that detects the presence of an object. Some of the applications of Proximity Sensors are Mobile Phones, Cars (Parking Sensors), industries (object alignment), Ground Proximity in Aircrafts, etc. INFRARED (IR) SENSOR: IR Sensors or Infrared Sensor are light based sensor that are used in various applications like Proximity and Object Detection. Different applications where IR Sensor is implemented are Mobile Phones, Robots, Industrial assembly, automobiles etc.
+TOUCH SENSOR: 
+Touch Sensors are the electronic sensors that can detect touch. They operate as a switch when touched. These sensors are used in lamps, touch screens of the mobile, etc. Touch sensors offer an intuitive user interface. HUMIDITY SENSOR: A humidity sensor measures and reports both moisture and air temperature. They are used for range far and wide. People with illnesses affected by humidity, monitoring and preventive measure in homes employ humidity sensors. A humidity sensor is also found as part of home heating, ventilating and air conditioning systems.
+
+
+NODEMCU PROGRAMMING: 
+General-purpose input/output (GPIO) is a pin on an Integrated Circuit which can be either input pin or output pin, whose behaviour can be controlled at the run time.
+
+
+CODE FOR BLINK LED:
+#define BUILTIN_LED 5
+void setup()
+{
+pinMode(BUILTIN_LED, OUTPUT); // Initialize the BUILTIN_LED pin as an output
+}
+void loop()
+{
+digitalWrite(BUILTIN_LED, LOW); // Turn the LED on (LOW is the voltage level)
+// but actually the LED is on because active low on ESP-01
+delay(1000);
+digitalWrite(BUILTIN_LED, HIGH); // Turn the LED off by making the voltage HIGH
+delay(1000);
+}
